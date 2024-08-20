@@ -1,0 +1,59 @@
+:root {
+  --gray: #e2e2e2;
+  --darkGray: "e7e6e6";
+}
+
+article h1 {
+  text-align: center;
+  padding: 50px;
+}
+
+.clock-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-container .clock {
+  position: relative;
+
+  border: 2px solid var(--darkGray);
+  background: var(--gray);
+  border-radius: 50%;
+  padding: 30px;
+  box-shadow: 1px 2px 5px 7px rgba(232, 232, 232, 1);
+
+  width: 400px;
+  height: 400px;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hours-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.long-img {
+  transform: translate(-16%, -76%);
+  z-index: 3;
+}
+
+.small-img {
+  transform: translate(-76%, -74%);
+  z-index: 4;
+}
+
+.sec-needle-img {
+  transform: translate(-12%, -12%);
+  z-index: 5;
+}
